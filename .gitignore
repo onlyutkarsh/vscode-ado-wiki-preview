@@ -1,0 +1,8 @@
+out
+node_modules
+*.log
+.DS_Store
+*.vsix
+dist/github-markdown*.css
+dist/extension.js
+dist/extension.js.map

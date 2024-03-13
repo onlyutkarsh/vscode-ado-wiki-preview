@@ -1,0 +1,58 @@
+{
+  "name": "vscode-ado-wiki-preview",
+  "version": "1.0.0",
+  "displayName": "Azure DevOps Wiki Preview",
+  "description": "Preview markdown files in VS Code Azure DevOps Wiki format",
+  "publisher": "onlyutkarsh",
+  "author": "Utkarsh Shigihalli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onlyutkarsh/vscode-ado-wiki-preview.git"
+  },
+  "main": "./dist/extension.js",
+  "browser": "./dist/extension.js",
+  "scripts": {
+    "esbuild-base": "rimraf out && esbuild ./src/extension.ts --tsconfig=src/tsconfig.json --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
+    "esbuild": "npm run -S esbuild-base -- --sourcemap",
+    "esbuild-watch": "npm run -S esbuild-base -- --sourcemap --watch",
+    "compile": "tsc -p ./src",
+    "dev": "npm run compile && npm run esbuild-watch",
+    "package": "vsce package",
+    "deploy": "vsce publish"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "activationEvents": [],
+  "contributes": {
+    "markdown.markdownItPlugins": true,
+    "markdown.previewStyles": [
+      "./dist/base.css",
+      "./dist/content.css",
+      "./dist/toc.css",
+      "./dist/highlight-js.css"
+    ]
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^13.0.7",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/fs-extra": "^11.0.4",
+    "@types/glob": "^8.1.0",
+    "@types/node": "~20.11.17",
+    "@types/vscode": "^1.83.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
+    "@vscode/vsce": "^2.23.0",
+    "esbuild": "^0.20.0",
+    "eslint": "^8.56.0",
+    "fs-extra": "^11.2.0",
+    "glob": "^10.3.10",
+    "ovsx": "^0.8.3",
+    "prettier": "^3.2.5",
+    "rimraf": "^5.0.5",
+    "typescript": "~5.3.3"
+  }
+}

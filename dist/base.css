@@ -1,0 +1,93 @@
+html,
+body .ado-markdown-body {
+  display: flex;
+  font-family: "Segoe UI", "-apple-system", BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Ubuntu, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 0.875rem;
+  padding: 0;
+  margin: 0;
+}
+
+.markdown-preview-container.markdown-content {
+  margin: 20px;
+}
+
+h1:hover a.shareHeaderAnchor:after,
+h2:hover a.shareHeaderAnchor:after,
+h3:hover a.shareHeaderAnchor:after,
+h4:hover a.shareHeaderAnchor:after,
+h5:hover a.shareHeaderAnchor:after,
+h6:hover a.shareHeaderAnchor:after {
+  content: "\e71b ";
+  font-family: "AzureDevOpsMDL2Assets";
+  font-size: smaller;
+}
+
+h1:hover a.shareHeaderAnchor:hover,
+h2:hover a.shareHeaderAnchor:hover,
+h3:hover a.shareHeaderAnchor:hover,
+h4:hover a.shareHeaderAnchor:hover,
+h5:hover a.shareHeaderAnchor:hover,
+h6:hover a.shareHeaderAnchor:hover {
+  text-decoration: none;
+}
+
+h1 a.shareHeaderAnchor,
+h2 a.shareHeaderAnchor,
+h3 a.shareHeaderAnchor,
+h4 a.shareHeaderAnchor,
+h5 a.shareHeaderAnchor,
+h6 a.shareHeaderAnchor {
+  margin: 0 4px 0 4px;
+  padding: 0 4px 0 4px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+h1 a.shareHeaderAnchor:focus:after,
+h2 a.shareHeaderAnchor:focus:after,
+h3 a.shareHeaderAnchor:focus:after,
+h4 a.shareHeaderAnchor:focus:after,
+h5 a.shareHeaderAnchor:focus:after,
+h6 a.shareHeaderAnchor:focus:after {
+  content: "\e71b ";
+  font-family: "AzureDevOpsMDL2Assets";
+  font-size: smaller;
+}
+
+h1 a.shareHeaderAnchor,
+h2 a.shareHeaderAnchor {
+  line-height: 22px;
+}
+
+h3 a.shareHeaderAnchor,
+h4 a.shareHeaderAnchor {
+  line-height: 18px;
+}
+
+h5 a.shareHeaderAnchor,
+h6 a.shareHeaderAnchor {
+  line-height: 14px;
+}
+
+table.metadata-yaml-table {
+  font-size: 0.75rem;
+  line-height: 1;
+}
+.task-list input.task-list-item-checkbox {
+  vertical-align: middle;
+  margin: 4px;
+  float: none;
+}
+
+ul li.task-list-item {
+  list-style-type: none;
+}
+
+ul.task-list {
+  padding-left: 7px;
+}
+
+li.task-list-item {
+  min-height: 18px;
+}
