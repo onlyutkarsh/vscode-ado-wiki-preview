@@ -1,3 +1,11 @@
+## [1.0.3](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/compare/v1.0.2...v1.0.3) (2024-03-16)
+
+
+### Bug Fixes
+
+* update secret ([74aea65](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/commit/74aea656536fdb8470c8a0a9c1b0a53e6bac14ef))
+* update secret ([9318d52](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/commit/9318d52baccb9e14e5b8daa3da9cff14cfd766ba))
+
 ## [1.0.2](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/compare/v1.0.1...v1.0.2) (2024-03-16)
 
 
