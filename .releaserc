@@ -24,8 +24,8 @@
       {
         "assets": [
           {
-            "path": "*.vsix",
-            "label": "Git User Profiles"
+            "path": "**/*.vsix",
+            "label": "vscode-ado-wiki-preview"
           }
         ]
       }
