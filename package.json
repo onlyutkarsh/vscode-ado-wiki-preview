@@ -38,6 +38,7 @@
     "copy-fonts": "cp -r ./fonts ./dist",
     "dev": "npm run compile && npm-run-all --parallel sass-dev-watch esbuild-watch",
     "package": "npm run compile && vsce package",
+    "publish:ovsx": "ovsx publish",
     "deploy": "vsce publish",
     "clean": "rm -rf ./dist && rm -rf ./out && rm -rf ./node_modules"
   },
