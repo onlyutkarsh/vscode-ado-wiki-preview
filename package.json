@@ -1,6 +1,6 @@
 {
   "name": "vscode-ado-wiki-preview",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "displayName": "Markdown Preview for Azure DevOps Wiki",
   "description": "Preview markdown files in Azure DevOps wiki format.",
   "publisher": "onlyutkarsh",
@@ -37,7 +37,7 @@
     "compile": "tsc -p ./src && npm run sass-prod",
     "copy-fonts": "cp -r ./fonts ./dist",
     "dev": "npm run compile && npm-run-all --parallel sass-dev-watch esbuild-watch",
-    "package": "vsce package",
+    "package": "npm run compile && vsce package",
     "deploy": "vsce publish",
     "clean": "rm -rf ./dist && rm -rf ./out && rm -rf ./node_modules"
   },
