@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/compare/v1.0.4...v1.0.5) (2024-03-16)
+
+
+### Bug Fixes
+
+* reduce image size ([f435e72](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/commit/f435e7218484a1f35bc63eb77fde2cfc7ddf45b2))
+
 ## [1.0.4](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/compare/v1.0.3...v1.0.4) (2024-03-16)
 
 

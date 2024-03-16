@@ -1,6 +1,6 @@
 {
   "name": "vscode-ado-wiki-preview",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "displayName": "Markdown Preview for Azure DevOps Wiki",
   "description": "Preview markdown files in Azure DevOps wiki format.",
   "publisher": "onlyutkarsh",
