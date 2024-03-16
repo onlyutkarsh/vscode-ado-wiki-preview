@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/compare/v1.0.0...v1.0.1) (2024-03-16)
+
+
+### Bug Fixes
+
+* workflow ([5868af9](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/commit/5868af98ba785e1b6b11bde66100f8eb2106b58a))
+
 # 1.0.0 (2024-03-16)
 
 
