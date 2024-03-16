@@ -74,7 +74,6 @@ Console.WriteLine("Hello, World!");
    - Nested item 1
       - Further nested item 1
       - Further nested item 2
-      - Further nested item 3
    - Nested item 2
    - Nested item 3
 
