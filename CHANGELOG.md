@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/compare/v1.0.5...v1.0.6) (2024-03-16)
+
+
+### Bug Fixes
+
+* upload vsix as release ([c6e0b5c](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/commit/c6e0b5ccfb8f6033cb6dad7b899b7718275d220c))
+
 ## [1.0.5](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/compare/v1.0.4...v1.0.5) (2024-03-16)
 
 
