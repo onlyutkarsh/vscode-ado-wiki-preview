@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/compare/v1.0.1...v1.0.2) (2024-03-16)
+
+
+### Bug Fixes
+
+* ovsx as dev dependency ([8db7faa](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/commit/8db7faa24a7b11afd24cd785dc4ab15ac53b7af2))
+
 ## [1.0.1](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/compare/v1.0.0...v1.0.1) (2024-03-16)
 
 
