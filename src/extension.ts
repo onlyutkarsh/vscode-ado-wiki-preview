@@ -12,7 +12,7 @@ export async function activate(_: vscode.ExtensionContext) {
 function adoPlugin(md: any) {
   const render = md.renderer.render;
   md.renderer.render = function (...args: any[]) {
-    return `<div class="ado-markdown-body">
+    return `<div class="ado-md-body">
         <div class="markdown-content">${render.apply(render, args)}</div>
     </div>`;
   };

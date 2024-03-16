@@ -1,26 +1,46 @@
 {
   "name": "vscode-ado-wiki-preview",
-  "version": "1.0.0",
-  "displayName": "Azure DevOps Wiki Preview",
-  "description": "Preview markdown files in VS Code Azure DevOps Wiki format",
+  "version": "0.0.1",
+  "displayName": "Markdown Preview for Azure DevOps Wiki",
+  "description": "Preview markdown files in Azure DevOps wiki format",
   "publisher": "onlyutkarsh",
   "author": "Utkarsh Shigihalli",
   "repository": {
     "type": "git",
     "url": "https://github.com/onlyutkarsh/vscode-ado-wiki-preview.git"
   },
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#F2F2F2",
+    "theme": "light"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "azure devops",
+    "markdown",
+    "wiki",
+    "preview",
+    "ado",
+    "azdo"
+  ],
   "main": "./dist/extension.js",
   "browser": "./dist/extension.js",
   "scripts": {
+    "sass-dev": "sass--update --no-source-map --style=expanded scss:dist",
+    "sass-dev-watch": "sass --watch --update --no-source-map --style=expanded scss:dist",
+    "sass-prod": "sass --update --no-source-map --style=compressed scss:dist",
     "esbuild-base": "rimraf out && esbuild ./src/extension.ts --tsconfig=src/tsconfig.json --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
     "esbuild": "npm run -S esbuild-base -- --sourcemap",
     "esbuild-watch": "npm run -S esbuild-base -- --sourcemap --watch",
-    "compile": "tsc -p ./src",
-    "dev": "npm run compile && npm run esbuild-watch",
+    "compile": "tsc -p ./src && npm run sass-prod",
+    "copy-fonts": "cp -r ./fonts ./dist",
+    "dev": "npm run compile && npm-run-all --parallel sass-dev-watch esbuild-watch",
     "package": "vsce package",
-    "deploy": "vsce publish"
+    "deploy": "vsce publish",
+    "clean": "rm -rf ./dist && rm -rf ./out && rm -rf ./node_modules"
   },
-  "keywords": [],
   "license": "ISC",
   "engines": {
     "vscode": "^1.83.0"
@@ -30,17 +50,15 @@
     "markdown.markdownItPlugins": true,
     "markdown.previewStyles": [
       "./dist/base.css",
-      "./dist/content.css",
-      "./dist/toc.css",
-      "./dist/highlight-js.css"
+      "./dist/ms.css"
     ]
   },
   "devDependencies": {
-    "@types/markdown-it": "^13.0.7",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/fs-extra": "^11.0.4",
     "@types/glob": "^8.1.0",
+    "@types/markdown-it": "^13.0.7",
     "@types/node": "~20.11.17",
     "@types/vscode": "^1.83.0",
     "@typescript-eslint/eslint-plugin": "^7.0.1",
@@ -50,9 +68,11 @@
     "eslint": "^8.56.0",
     "fs-extra": "^11.2.0",
     "glob": "^10.3.10",
+    "npm-run-all": "^4.1.5",
     "ovsx": "^0.8.3",
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
+    "sass": "^1.72.0",
     "typescript": "~5.3.3"
   }
 }

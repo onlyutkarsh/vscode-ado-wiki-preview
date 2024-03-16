@@ -12,3 +12,9 @@ wiki-sample.md
 .eslintignore
 .prettierignore
 azdo.css
+sample/
+marketplace/
+scss/
+fonts/
+.releaserc
+assets/
