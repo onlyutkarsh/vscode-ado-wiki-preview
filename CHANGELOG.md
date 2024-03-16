@@ -1,3 +1,11 @@
+## [1.0.4](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/compare/v1.0.3...v1.0.4) (2024-03-16)
+
+
+### Bug Fixes
+
+* regen token ([442c842](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/commit/442c8420df1b119d1c7a32f25abeee2dda71d8e3))
+* regen token ([0339f5f](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/commit/0339f5fde6ff1cf84501ff1a87a13dc2a0f2def0))
+
 ## [1.0.3](https://github.com/onlyutkarsh/vscode-ado-wiki-preview/compare/v1.0.2...v1.0.3) (2024-03-16)
 
 
