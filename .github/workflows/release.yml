@@ -70,4 +70,4 @@ jobs:
         if: success() && steps.semantic-release.outputs.new_release_version != ''
         run: npm run deploy
         env:
-          VSCE_PAT: ${{ secrets.VS_MARKETPLACE_PAT }}
+          VSCE_PAT: ${{ secrets.VS_MARKETPLACE_PAT }} # vsce publish checks for VSCE_PAT env variable by default
